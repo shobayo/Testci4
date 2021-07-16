@@ -33,7 +33,6 @@ class DashboardModel extends Model {
 
     }
 
-    
     public function getLoggedInUserInfo($id)
     {
         $builder = $this->db->table('login_activity');
