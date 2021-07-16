@@ -49,6 +49,11 @@
                     </li>
 
                     <?php if(session()->has("logged_user") || session()->has("google_user")):?>
+                        
+                    <?= $this->section('page_title'); ?>
+                    <span><?= ucfirst($userdata->firstname) . ' '. ucfirst($userdata->lastname) ;?></span>
+                    <?= $this->endsection();?>
+                    
 
                         <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><?= $this->renderSection('page_title');?><b class="caret"></b></a>

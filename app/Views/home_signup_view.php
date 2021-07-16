@@ -6,6 +6,7 @@
 
 
 
+
 <?= $this->Section("content"); ?>
 
 <?= $this->include('partials/homepost'); ?>

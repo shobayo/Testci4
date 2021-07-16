@@ -1,9 +1,5 @@
 <?= $this->extend("templates/cmsbase"); ?>
 
-<?= $this->section('page_title');?>
-<span><?= ucfirst($userdata->firstname) . ' '. ucfirst($userdata->lastname) ;?></span>
-<?= $this->endsection();?>
-
 <?= $this->Section("content"); ?>
 <script>
     setTimeout(function(){

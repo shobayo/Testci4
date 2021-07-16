@@ -1,16 +1,5 @@
 <?= $this->extend("templates/cmsbase"); ?>
 
-<?= $this->Section("page_title"); ?>
-<?php if(session()->has('google_user')):
-$uinfo = session()->get('google_user');
-?>
-<span><?= $uinfo['first_name']; ?> <?= $uinfo['last_name'];?></span>
-<?php else: ?>
-<span><?= ucfirst($userdata->firstname) . ' '. ucfirst($userdata->lastname); ?></span>
-
-<?php endif; ?>
-<?= $this->endSection(); ?>
-
 
 
 <?= $this->Section("content"); ?>
@@ -34,7 +23,7 @@ $uinfo = session()->get('google_user');
             <h4>Mobile: <?= $userdata->mobile;?></h4>
             <h4>Email: <?= $userdata->email;?></h4>
             <h4>Gender: <?= $userdata->gender;?></h4>
-            <a class="btn btn-primary" href="<?= base_url(); ?>/logout">Logout<span class="glyphicon glyphicon-chevron-right"></span> </a>
+            <a class="btn btn-primary" href="<?= base_url()?>/dashboard/logout">Logout<span class="glyphicon glyphicon-chevron-right"></span> </a>
             <p><br></p>
         </div>
         <br>

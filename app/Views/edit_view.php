@@ -1,8 +1,5 @@
 <?= $this->extend("templates/cmsbase"); ?>
 
-<?= $this->section('page_title');?>
-<span>Welcome to <?= ucfirst($userdata->firstname) . ' '. ucfirst($userdata->lastname);?></span>
-<?= $this->endsection();?>
 
 
 <?= $this->Section("content"); ?>
