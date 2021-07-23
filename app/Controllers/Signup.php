@@ -26,7 +26,7 @@ class Signup extends BaseController
             'lastname' => 'required|min_length[3]|max_length[20]',
 			'email' => 'required|valid_email|is_unique[users.email]',
             'password' => 'required|min_length[6]|max_length[16]',
-            'confirm password' => 'required|matches[password]',
+            'cpassword' => ['rules'=>'required|matches[password]', 'errors'=>['required'=> 'The confirm password field is required.',],],
 			'mobile' => 'required|numeric|exact_length[11]',
 		 ];
          if($this->validate($rules))

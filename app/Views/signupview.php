@@ -58,7 +58,7 @@ $page_session = \CodeIgniter\Config\Services::session();
                 </div>
                 <div class="form-group">
                     <label for="">Confirm Password</label>
-                    <input type="password" name="confirm password" class="form-control">
+                    <input type="password" name="cpassword" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="">Mobile Number</label>
